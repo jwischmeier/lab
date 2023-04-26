@@ -25,7 +25,7 @@ class Account:
         :param amount: Amount to decrement balance by
         :return: Boolean if transaction completed
         """
-        if self.__balance > amount and amount > 0:
+        if self.__balance >= amount and amount > 0:
             self.__balance -= amount
             return True
         else:
